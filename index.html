@@ -3,30 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wendy Hardware — Premium Building Hardware Exporter</title>
+  <title>HKH Hardware — Premium Building Hardware Exporter</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .hero-gradient {
-      background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
-    }
-    .product-card {
-      transition: all 0.3s cubic-bezier(.4,0,.2,1);
-    }
-    .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
-    }
-    .btn-primary {
-      background: #0f172a;
-      transition: all 0.2s ease;
-    }
-    .btn-primary:hover {
-      background: #1e3a8a;
-      transform: translateY(-1px);
-    }
+    html { scroll-behavior: smooth; }
+    .hero-gradient { background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%); }
+    .product-card { transition: all 0.3s cubic-bezier(.4,0,.2,1); }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02); }
+    .btn-primary { background: #0f172a; transition: all 0.2s ease; }
+    .btn-primary:hover { background: #1e3a8a; transform: translateY(-1px); }
   </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -36,17 +21,12 @@
       <a href="#home" class="text-2xl font-light tracking-tight text-gray-900">HKH <span class="font-medium">Hardware</span></a>
       <div class="hidden md:flex items-center space-x-12 text-sm text-gray-600">
         <a href="#products" class="hover:text-gray-900 transition-colors">Products</a>
+        <a href="#hot-products" class="hover:text-gray-900 transition-colors">Featured</a>
         <a href="#about" class="hover:text-gray-900 transition-colors">About</a>
         <a href="#contact" class="hover:text-gray-900 transition-colors">Contact</a>
       </div>
-      <a href="#contact" class="hidden md:block btn-primary text-white px-6 py-2 rounded-full text-sm font-medium">
-        Request Quote
-      </a>
-      <button class="md:hidden" id="mobile-menu-btn">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+      <a href="#contact" class="hidden md:block btn-primary text-white px-6 py-2 rounded-full text-sm font-medium">Request Quote</a>
+      <button class="md:hidden"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </nav>
   <!-- Hero -->
@@ -54,111 +34,142 @@
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto text-center">
         <p class="text-sm uppercase tracking-widest text-gray-500 mb-6">Exporting Quality Hardware Worldwide</p>
-        <h1 class="text-4xl md:text-6xl font-light tracking-tight text-gray-900 mb-8">
-          Precision Engineered <span class="font-medium">Building Hardware</span>
-        </h1>
-        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-          We manufacture premium bathroom hardware, glass installation fittings, and architectural hardware for export to distributors, retailers, and builders globally.
-        </p>
+        <h1 class="text-4xl md:text-6xl font-light tracking-tight text-gray-900 mb-8">Precision Engineered <span class="font-medium">Building Hardware</span></h1>
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">We manufacture premium bathroom hardware, glass installation fittings, and architectural hardware for export to distributors, retailers, and builders globally.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#products" class="btn-primary text-white px-8 py-3 rounded-full text-sm font-medium">
-            Explore Products
-          </a>
-          <a href="#contact" class="border border-gray-300 text-gray-900 bg-white hover:bg-gray-50 px-8 py-3 rounded-full text-sm font-medium transition-colors">
-            Contact Sales
-          </a>
+          <a href="#products" class="btn-primary text-white px-8 py-3 rounded-full text-sm font-medium">Explore Products</a>
+          <a href="#contact" class="border border-gray-300 text-gray-900 bg-white hover:bg-gray-50 px-8 py-3 rounded-full text-sm font-medium transition-colors">Contact Sales</a>
         </div>
       </div>
     </div>
   </section>
-  <!-- Products -->
+  <!-- Products Categories -->
   <section id="products" class="py-24 bg-white">
     <div class="container mx-auto px-6">
       <div class="max-w-2xl mx-auto text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-4">Product Categories</h2>
-        <p class="text-gray-600 leading-relaxed">
-          A full range of quality hardware for bathroom, glass installation, and architectural applications.
-        </p>
+        <p class="text-gray-600 leading-relaxed">A full range of quality hardware for bathroom, glass installation, and architectural applications.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Product 1 -->
+        
+        <!-- Category 1: Shower Door Hinges -->
         <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
-          <img src="https://images.unsplash.com/photo-1584622068875-fb7e5e8bcf08?q=80&w=800&auto=format&fit=crop" alt="Bathroom Storage" class="w-full h-64 object-cover" />
+          <img src="https://raw.githubusercontent.com/wendyli6123-tech/hkhinternational-website/main/images/shower-hinge-01.jpg" alt="Shower Door Hinges" class="w-full h-64 object-contain bg-white p-4" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Shower Door Hinges</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Precision engineered solid brass shower hinges. 90° / 135° / 180° opening angles, suitable for 8-12mm glass.</p>
+            <a href="#contact" onclick="prefillProduct('Shower Door Hinges')" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">Inquire →</a>
+          </div>
+        </div>
+        <!-- Category 2: Sliding Door Systems -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://picsum.photos/seed/sliding/800/600" alt="Sliding Door Systems" class="w-full h-64 object-contain bg-white p-4" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Sliding Door Systems</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Heavy duty sliding shower door systems with smooth rolling bearings, stainless steel track and rollers.</p>
+            <a href="#contact" onclick="prefillProduct('Sliding Door Systems')" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">Inquire →</a>
+          </div>
+        </div>
+        <!-- Category 3: Glass Clamps & Connectors -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://picsum.photos/seed/clamp/800/600" alt="Glass Clamps" class="w-full h-64 object-contain bg-white p-4" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Glass Clamps & Connectors</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">High strength glass clamps and connectors for 8-12mm glass. Available in brass and stainless steel 304/316.</p>
+            <a href="#contact" onclick="prefillProduct('Glass Clamps & Connectors')" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">Inquire →</a>
+          </div>
+        </div>
+        <!-- Category 4: Door Pulls & Handles -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://picsum.photos/seed/handle/800/600" alt="Door Pulls & Handles" class="w-full h-64 object-contain bg-white p-4" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Door Pulls & Handles</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Wide selection of stainless steel and brass door handles available in chrome, satin, and black finishes.</p>
+            <a href="#contact" onclick="prefillProduct('Door Pulls & Handles')" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">Inquire →</a>
+          </div>
+        </div>
+        <!-- Category 5: Bathroom Storage -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://picsum.photos/seed/storage/800/600" alt="Bathroom Storage" class="w-full h-64 object-cover" />
           <div class="p-8">
             <h3 class="text-xl font-light text-gray-900 mb-2">Bathroom Storage</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Corrosion-resistant black finished shelves, towel racks, and corner organizers designed for wet bathroom environments.
-            </p>
-            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
-              Inquire →
-            </a>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Corrosion-resistant shelves, towel racks, soap holders, and corner organizers designed for wet bathroom environments.</p>
+            <a href="#contact" onclick="prefillProduct('Bathroom Storage')" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">Inquire →</a>
+          </div>
+        </div>
+        <!-- Category 6: Custom OEM -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://picsum.photos/seed/oem/800/600" alt="Custom OEM" class="w-full h-64 object-cover" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Custom OEM Manufacturing</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">We produce custom hardware according to your drawings and specifications. Your trusted OEM partner in China.</p>
+            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">Inquire →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Products -->
+  <section id="hot-products" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-4">Featured Products</h2>
+        <p class="text-gray-600 leading-relaxed">Our most popular products trusted by customers worldwide.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Product 1 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+          <img src="https://raw.githubusercontent.com/wendyli6123-tech/hkhinternational-website/main/images/shower-hinge-01.jpg" alt="Shower Door Hinge" class="w-full h-52 object-contain bg-white p-4" />
+          <div class="p-5">
+            <h3 class="text-base font-medium text-gray-900 mb-1">Heavy Duty Shower Door Hinge</h3>
+            <p class="text-gray-500 text-xs mb-3">Solid Brass, Glass to Wall, 90° Opening</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">MOQ: 100 pcs</span>
+              <a href="#contact" onclick="prefillProduct('Heavy Duty Shower Door Hinge')" class="text-xs font-medium text-blue-600 hover:text-blue-800 transition-colors">Get Price →</a>
+            </div>
           </div>
         </div>
         <!-- Product 2 -->
-        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
-          <img src="https://images.unsplash.com/photo-1560185007c67-b00e41c4f7c3?q=80&w=800&auto=format&fit=crop" alt="Glass Door Hardware" class="w-full h-64 object-cover" />
-          <div class="p-8">
-            <h3 class="text-xl font-light text-gray-900 mb-2">Glass Door Hardware</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Precision engineered bathroom glass clamps, hinges, and fixtures for modern shower enclosures.
-            </p>
-            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
-              Inquire →
-            </a>
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+          <img src="https://picsum.photos/seed/sliding2/800/600" alt="Sliding Door System" class="w-full h-52 object-contain bg-white p-4" />
+          <div class="p-5">
+            <h3 class="text-base font-medium text-gray-900 mb-1">Sliding Shower Door System</h3>
+            <p class="text-gray-500 text-xs mb-3">Stainless Steel, Smooth Sliding</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">MOQ: 50 sets</span>
+              <a href="#contact" onclick="prefillProduct('Sliding Shower Door System')" class="text-xs font-medium text-blue-600 hover:text-blue-800 transition-colors">Get Price →</a>
+            </div>
           </div>
         </div>
         <!-- Product 3 -->
-        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
-          <img src="https://images.unsplash.com/photo-1581008355863-042ac2f2aae3?q=80&w=800&auto=format&fit=crop" alt="Pull Handles" class="w-full h-64 object-cover" />
-          <div class="p-8">
-            <h3 class="text-xl font-light text-gray-900 mb-2">Door Pulls & Handles</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Wide selection of furniture and door pulls available in multiple finishes. Bulk export ready.
-            </p>
-            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
-              Inquire →
-            </a>
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+          <img src="https://picsum.photos/seed/clamp2/800/600" alt="Glass Clamp" class="w-full h-52 object-contain bg-white p-4" />
+          <div class="p-5">
+            <h3 class="text-base font-medium text-gray-900 mb-1">Stainless Steel Glass Clamp</h3>
+            <p class="text-gray-500 text-xs mb-3">304 Stainless Steel, For 8-12mm Glass</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">MOQ: 200 pcs</span>
+              <a href="#contact" onclick="prefillProduct('Stainless Steel Glass Clamp')" class="text-xs font-medium text-blue-600 hover:text-blue-800 transition-colors">Get Price →</a>
+            </div>
           </div>
         </div>
         <!-- Product 4 -->
-        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
-          <img src="https://images.unsplash.com/photo-1504280390367-36abbbf0e53?q=80&w=800&auto=format&fit=crop" alt="Hinges" class="w-full h-64 object-cover" />
-          <div class="p-8">
-            <h3 class="text-xl font-light text-gray-900 mb-2">Hinges & Clamps</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Durable precision hinges tested for thousands of open/close cycles ensuring long life.
-            </p>
-            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
-              Inquire →
-            </a>
+        <div class="product-card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+          <img src="https://picsum.photos/seed/handle2/800/600" alt="Door Handle" class="w-full h-52 object-contain bg-white p-4" />
+          <div class="p-5">
+            <h3 class="text-base font-medium text-gray-900 mb-1">Glass Door Pull Handle</h3>
+            <p class="text-gray-500 text-xs mb-3">Stainless Steel, Multiple Finishes</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-gray-400">MOQ: 50 pairs</span>
+              <a href="#contact" onclick="prefillProduct('Glass Door Pull Handle')" class="text-xs font-medium text-blue-600 hover:text-blue-800 transition-colors">Get Price →</a>
+            </div>
           </div>
         </div>
-        <!-- Product 5 -->
-        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
-          <img src="https://images.unsplash.com/photo-1503387762817-2a4be0c5c316?q=80&w=800&auto=format&fit=crop" alt="Fixing Clamps" class="w-full h-64 object-cover" />
-          <div class="p-8">
-            <h3 class="text-xl font-light text-gray-900 mb-2">Fixing Clamps</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              High strength clamping fittings for glass, wood, and metal assemblies in various sizes.
-            </p>
-            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
-              Inquire →
-            </a>
-          </div>
-        </div>
-        <!-- Product 6 -->
-        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
-          <img src="https://images.unsplash.com/photo-1517502889246-71adfcc7d7f4?q=80&w=800&auto=format&fit=crop" alt="Custom OEM" class="w-full h-64 object-cover" />
-          <div class="p-8">
-            <h3 class="text-xl font-light text-gray-900 mb-2">Custom OEM Manufacturing</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              We produce custom hardware according to your drawings and specifications.
-            </p>
-            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
-              Inquire →
-            </a>
-          </div>
-        </div>
+      </div>
+      <div class="text-center mt-12">
+        <p class="text-gray-500 mb-4">More products coming soon! Contact us for full catalog.</p>
+        <a href="#contact" class="inline-block btn-primary text-white px-8 py-3 rounded-full text-sm font-medium">Request Full Catalog</a>
       </div>
     </div>
   </section>
@@ -168,36 +179,18 @@
       <div class="flex flex-col lg:flex-row items-center gap-16">
         <div class="lg:w-1/2">
           <p class="text-sm uppercase tracking-widest text-gray-400 mb-4">About Us</p>
-          <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6">
-            Foshan HighLink International Trade Co., Ltd.
-          </h2>
-          <p class="text-gray-600 leading-relaxed mb-6">
-            Located in Foshan, Guangdong — China's hardware manufacturing hub, <strong>HKH International Trading Co., Limited</strong> has been specializing in manufacturing bathroom glass hardware for over 20 years.
-          </p>
-          <p class="text-gray-600 leading-relaxed mb-8">
-            We adhere to the business philosophy of <em>"Quality First, Customer Supreme"</em>. Our complete product range covers solid brass hinges & clamps, stainless steel fittings, sliding door systems, door handles, patch fittings, floor springs and more. Every product is strictly inspected before shipment to meet international quality standards.
-          </p>
+          <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6">Foshan HighLink International Trade Co., Ltd.</h2>
+          <p class="text-gray-600 leading-relaxed mb-6">Located in Foshan, Guangdong — China's hardware manufacturing hub, <strong>HKH International Trading Co., Limited</strong> has been specializing in manufacturing bathroom glass hardware for over 20 years.</p>
+          <p class="text-gray-600 leading-relaxed mb-8">We adhere to the business philosophy of <em>"Quality First, Customer Supreme"</em>. Our complete product range covers solid brass hinges & clamps, stainless steel fittings, sliding door systems, door handles, patch fittings, floor springs and more. Every product is strictly inspected before shipment to meet international quality standards.</p>
           <div class="grid grid-cols-2 gap-6 text-gray-600">
-            <div>
-              <p class="font-medium text-gray-900 text-lg mb-1">✓ Strict QC</p>
-              <p class="text-sm">Every order inspected before shipment</p>
-            </div>
-            <div>
-              <p class="font-medium text-gray-900 text-lg mb-1">✓ OEM Ready</p>
-              <p class="text-sm">Custom sizes and finishes</p>
-            </div>
-            <div>
-              <p class="font-medium text-gray-900 text-lg mb-1">✓ On-Time</p>
-              <p class="text-sm">Reliable production & delivery</p>
-            </div>
-            <div>
-              <p class="font-medium text-gray-900 text-lg mb-1">✓ Flexible MOQ</p>
-              <p class="text-sm">Accommodating small & large orders</p>
-            </div>
+            <div><p class="font-medium text-gray-900 text-lg mb-1">✓ Strict QC</p><p class="text-sm">Every order inspected before shipment</p></div>
+            <div><p class="font-medium text-gray-900 text-lg mb-1">✓ OEM Ready</p><p class="text-sm">Custom sizes and finishes</p></div>
+            <div><p class="font-medium text-gray-900 text-lg mb-1">✓ On-Time</p><p class="text-sm">Reliable production & delivery</p></div>
+            <div><p class="font-medium text-gray-900 text-lg mb-1">✓ Flexible MOQ</p><p class="text-sm">Accommodating small & large orders</p></div>
           </div>
         </div>
         <div class="lg:w-1/2">
-          <img src="https://images.unsplash.com/photo-1598257006661-00a816b99cfc?q=80&w=800&auto=format&fit=crop" alt="Factory Workspace" class="rounded-2xl shadow-sm border border-gray-100" />
+          <img src="https://picsum.photos/seed/factory/800/600" alt="Factory Workspace" class="rounded-2xl shadow-sm border border-gray-100" />
         </div>
       </div>
     </div>
@@ -207,40 +200,37 @@
     <div class="container mx-auto px-6">
       <div class="max-w-2xl mx-auto text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-4">Get In Touch</h2>
-        <p class="text-gray-600">
-          Send us your inquiry and we'll get back to you within 24 hours.
-        </p>
+        <p class="text-gray-600">Send us your inquiry and we'll get back to you within 24 hours.</p>
       </div>
       <div class="max-w-xl mx-auto">
-        <form class="space-y-6">
+        <form id="inquiry-form" class="space-y-6">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-              <input type="text" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="Your Name">
+              <input type="text" id="inquiry-name" required class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="Your Name">
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-              <input type="email" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="you@company.com">
+              <input type="email" id="inquiry-email" required class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="you@company.com">
             </div>
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-2">Product Interest</label>
-            <input type="text" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="e.g. Bathroom Glass Clamps">
+            <input type="text" id="inquiry-product" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="e.g. Bathroom Glass Clamps">
           </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-            <textarea rows="5" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="Tell us about your project..."></textarea>
+            <textarea rows="5" id="inquiry-message" required class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="Tell us about your project, quantity needed, target price..."></textarea>
           </div>
-          <button type="submit" class="w-full btn-primary text-white font-medium px-6 py-3 rounded-xl text-sm">
-            Send Inquiry
-          </button>
+          <button type="submit" class="w-full btn-primary text-white font-medium px-6 py-3 rounded-xl text-sm">Send Inquiry</button>
         </form>
+        <p class="text-center text-gray-400 text-xs mt-4">💡 Your email client will open automatically with the pre-filled message.</p>
         <div class="mt-16 pt-10 border-t border-gray-100 text-center text-gray-500">
           <p class="mb-2"><span class="font-medium text-gray-700">Evan Chan (General Manager):</span> +86 182 1858 7502 (WhatsApp/WeChat)</p>
           <p class="mb-2"><span class="font-medium text-gray-700">Wendy Lee (Foreign Trade Manager):</span> +86 182 1858 2806 (WhatsApp/WeChat)</p>
           <p class="mb-2"><span class="font-medium text-gray-700">Email:</span> hkh01@highlinkhardware.com / hkh02@highlinkhardware.com</p>
           <p class="mb-2"><span class="font-medium text-gray-700">Tel:</span> +86 0757 8788 9902</p>
-          <p class="mt-4 mb-2"><span class="font-medium text-gray-700">Address:</span><br>Building 1, Galaxy Plaza, No.1 Southwest Avenue, Southwest Sub-district, Sanshui District, Foshan City, Guangdong Province, China</p>
+          <p class="mt-4 mb-2"><span class="font-medium text-gray-700">Address:</span><br>Building 1, Galaxy Plaza, No.1 Southwest Avenue, Sanshui District, Foshan, Guangdong, China</p>
           <p><span class="font-medium text-gray-700">Working Hours:</span> Monday — Friday, 9:00 — 18:00 CST</p>
         </div>
       </div>
@@ -263,6 +253,20 @@
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    function prefillProduct(productName) {
+      document.getElementById('inquiry-product').value = productName;
+      document.getElementById('inquiry-message').value = "Hi, I'm interested in " + productName + ". Please send me more details and pricing.\n\nQuantity needed:\n\nBest regards,";
+    }
+    document.getElementById('inquiry-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('inquiry-name').value;
+      const email = document.getElementById('inquiry-email').value;
+      const product = document.getElementById('inquiry-product').value;
+      const message = document.getElementById('inquiry-message').value;
+      const subject = encodeURIComponent("Inquiry from " + name + (product ? " - " + product : ""));
+      const body = encodeURIComponent("From: " + name + "\n" + "Email: " + email + "\n" + (product ? "Product: " + product + "\n" : "") + "\n----------------------------------------\n\n" + message + "\n\n----------------------------------------\nSent from HKH Hardware website");
+      window.location.href = "mailto:hkh02@highlinkhardware.com?subject=" + subject + "&body=" + body;
+    });
   </script>
 </body>
 </html>
