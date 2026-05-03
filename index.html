@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wendy Hardware — Premium Building Hardware Exporter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+    }
+    .product-card {
+      transition: all 0.3s cubic-bezier(.4,0,.2,1);
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+    }
+    .btn-primary {
+      background: #0f172a;
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover {
+      background: #1e3a8a;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-light tracking-tight text-gray-900">HKH <span class="font-medium">Hardware</span></a>
+      <div class="hidden md:flex items-center space-x-12 text-sm text-gray-600">
+        <a href="#products" class="hover:text-gray-900 transition-colors">Products</a>
+        <a href="#about" class="hover:text-gray-900 transition-colors">About</a>
+        <a href="#contact" class="hover:text-gray-900 transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:block btn-primary text-white px-6 py-2 rounded-full text-sm font-medium">
+        Request Quote
+      </a>
+      <button class="md:hidden" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-gradient pt-32 pb-24">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-sm uppercase tracking-widest text-gray-500 mb-6">Exporting Quality Hardware Worldwide</p>
+        <h1 class="text-4xl md:text-6xl font-light tracking-tight text-gray-900 mb-8">
+          Precision Engineered <span class="font-medium">Building Hardware</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+          We manufacture premium bathroom hardware, glass installation fittings, and architectural hardware for export to distributors, retailers, and builders globally.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#products" class="btn-primary text-white px-8 py-3 rounded-full text-sm font-medium">
+            Explore Products
+          </a>
+          <a href="#contact" class="border border-gray-300 text-gray-900 bg-white hover:bg-gray-50 px-8 py-3 rounded-full text-sm font-medium transition-colors">
+            Contact Sales
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-4">Product Categories</h2>
+        <p class="text-gray-600 leading-relaxed">
+          A full range of quality hardware for bathroom, glass installation, and architectural applications.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Product 1 -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1584622068875-fb7e5e8bcf08?q=80&w=800&auto=format&fit=crop" alt="Bathroom Storage" class="w-full h-64 object-cover" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Bathroom Storage</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Corrosion-resistant black finished shelves, towel racks, and corner organizers designed for wet bathroom environments.
+            </p>
+            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
+              Inquire →
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1560185007c67-b00e41c4f7c3?q=80&w=800&auto=format&fit=crop" alt="Glass Door Hardware" class="w-full h-64 object-cover" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Glass Door Hardware</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Precision engineered bathroom glass clamps, hinges, and fixtures for modern shower enclosures.
+            </p>
+            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
+              Inquire →
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1581008355863-042ac2f2aae3?q=80&w=800&auto=format&fit=crop" alt="Pull Handles" class="w-full h-64 object-cover" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Door Pulls & Handles</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Wide selection of furniture and door pulls available in multiple finishes. Bulk export ready.
+            </p>
+            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
+              Inquire →
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1504280390367-36abbbf0e53?q=80&w=800&auto=format&fit=crop" alt="Hinges" class="w-full h-64 object-cover" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Hinges & Clamps</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Durable precision hinges tested for thousands of open/close cycles ensuring long life.
+            </p>
+            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
+              Inquire →
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1503387762817-2a4be0c5c316?q=80&w=800&auto=format&fit=crop" alt="Fixing Clamps" class="w-full h-64 object-cover" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Fixing Clamps</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              High strength clamping fittings for glass, wood, and metal assemblies in various sizes.
+            </p>
+            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
+              Inquire →
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1517502889246-71adfcc7d7f4?q=80&w=800&auto=format&fit=crop" alt="Custom OEM" class="w-full h-64 object-cover" />
+          <div class="p-8">
+            <h3 class="text-xl font-light text-gray-900 mb-2">Custom OEM Manufacturing</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              We produce custom hardware according to your drawings and specifications.
+            </p>
+            <a href="#contact" class="inline-block text-sm font-medium text-gray-900 hover:opacity-70 transition-opacity">
+              Inquire →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-blue-50">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2">
+          <p class="text-sm uppercase tracking-widest text-gray-400 mb-4">About Us</p>
+          <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6">
+            Foshan HighLink International Trade Co., Ltd.
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Located in Foshan, Guangdong — China's hardware manufacturing hub, <strong>HKH International Trading Co., Limited</strong> has been specializing in manufacturing bathroom glass hardware for over 20 years.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            We adhere to the business philosophy of <em>"Quality First, Customer Supreme"</em>. Our complete product range covers solid brass hinges & clamps, stainless steel fittings, sliding door systems, door handles, patch fittings, floor springs and more. Every product is strictly inspected before shipment to meet international quality standards.
+          </p>
+          <div class="grid grid-cols-2 gap-6 text-gray-600">
+            <div>
+              <p class="font-medium text-gray-900 text-lg mb-1">✓ Strict QC</p>
+              <p class="text-sm">Every order inspected before shipment</p>
+            </div>
+            <div>
+              <p class="font-medium text-gray-900 text-lg mb-1">✓ OEM Ready</p>
+              <p class="text-sm">Custom sizes and finishes</p>
+            </div>
+            <div>
+              <p class="font-medium text-gray-900 text-lg mb-1">✓ On-Time</p>
+              <p class="text-sm">Reliable production & delivery</p>
+            </div>
+            <div>
+              <p class="font-medium text-gray-900 text-lg mb-1">✓ Flexible MOQ</p>
+              <p class="text-sm">Accommodating small & large orders</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <img src="https://images.unsplash.com/photo-1598257006661-00a816b99cfc?q=80&w=800&auto=format&fit=crop" alt="Factory Workspace" class="rounded-2xl shadow-sm border border-gray-100" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-4">Get In Touch</h2>
+        <p class="text-gray-600">
+          Send us your inquiry and we'll get back to you within 24 hours.
+        </p>
+      </div>
+      <div class="max-w-xl mx-auto">
+        <form id="inquiry-form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+              <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="Your Name">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+              <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="you@company.com">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Product Interest</label>
+            <input type="text" name="product" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="e.g. Bathroom Glass Clamps">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+            <textarea rows="5" name="message" required class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-gray-900 focus:bg-white outline-none transition-colors" placeholder="Tell us about your project, quantity needed, target price..."></textarea>
+          </div>
+          <button type="submit" id="submit-btn" class="w-full btn-primary text-white font-medium px-6 py-3 rounded-xl text-sm">
+            Send Inquiry
+          </button>
+        </form>
+        <div id="success-message" class="hidden text-center py-8">
+          <div class="text-5xl mb-4">✅</div>
+          <h3 class="text-xl font-medium text-gray-900 mb-2">Thank You!</h3>
+          <p class="text-gray-600">Your inquiry has been sent successfully. We'll get back to you within 24 hours.</p>
+        </div>
+        <div class="mt-16 pt-10 border-t border-gray-100 text-center text-gray-500">
+          <p class="mb-2"><span class="font-medium text-gray-700">Evan Chan (General Manager):</span> +86 182 1858 7502 (WhatsApp/WeChat)</p>
+          <p class="mb-2"><span class="font-medium text-gray-700">Wendy Lee (Foreign Trade Manager):</span> +86 182 1858 2806 (WhatsApp/WeChat)</p>
+          <p class="mb-2"><span class="font-medium text-gray-700">Email:</span> hkh01@highlinkhardware.com / hkh02@highlinkhardware.com</p>
+          <p class="mb-2"><span class="font-medium text-gray-700">Tel:</span> +86 0757 8788 9902</p>
+          <p class="mt-4 mb-2"><span class="font-medium text-gray-700">Address:</span><br>Building 1, Galaxy Plaza, No.1 Southwest Avenue, Southwest Sub-district, Sanshui District, Foshan City, Guangdong Province, China</p>
+          <p><span class="font-medium text-gray-700">Working Hours:</span> Monday — Friday, 9:00 — 18:00 CST</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-blue-100">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="text-xl font-light text-gray-900 mb-2">HKH <span class="font-medium">Hardware</span></div>
+          <p class="text-sm text-gray-500">© <span id="year"></span> All rights reserved.</p>
+        </div>
+        <div class="flex flex-wrap gap-8 text-sm text-gray-500">
+          <a href="#" class="hover:text-gray-800 transition-colors">Privacy</a>
+          <a href="#" class="hover:text-gray-800 transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Formspree integration - replace with your actual Formspree endpoint
+    const form = document.getElementById('inquiry-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const successMessage = document.getElementById('success-message');
+    
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      try {
+        // Replace this URL with your actual Formspree endpoint
+        const formData = new FormData(form);
+        const response = await fetch('https://formspree.io/f/[your-form-id', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          form.classList.add('hidden');
+          successMessage.classList.remove('hidden');
+        } else {
+          alert('Oops! There was a problem sending your message. Please email us directly.');
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }
+      } catch (error) {
+        alert('Oops! There was a problem sending your message. Please email us directly.');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
