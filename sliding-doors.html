@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sliding Door Series | HKH Hardware</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .product-card { transition: all 0.3s cubic-bezier(.4,0,.2,1); }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02); }
+    .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu { display: none; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+  <!-- Navigation with Dropdown -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-light tracking-tight text-gray-900">HKH <span class="font-medium">Hardware</span></a>
+      <div class="hidden md:flex items-center space-x-12 text-sm text-gray-600">
+        <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+        <div class="nav-dropdown relative">
+          <a href="products.html" class="text-blue-600 font-medium flex items-center">
+            Products
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2">
+            <a href="hinges.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">🚪 Shower Door Hinges</a>
+            <a href="sliding-doors.html" class="block px-4 py-2 hover:bg-blue-50 text-blue-600 font-medium">🚪 Sliding Door Series</a>
+            <a href="glass-clamps.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">🔧 Glass Clamps</a>
+            <a href="handles.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">🔩 Handles & Pulls</a>
+            <a href="products.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-500 border-t border-gray-100 mt-2">📋 View All Products</a>
+          </div>
+        </div>
+        <a href="index.html#about" class="hover:text-gray-900 transition-colors">About</a>
+        <a href="index.html#contact" class="hover:text-gray-900 transition-colors">Contact</a>
+      </div>
+      <a href="index.html#contact" class="hidden md:block bg-gray-900 hover:bg-blue-800 transition-all text-white px-6 py-2 rounded-full text-sm font-medium">Request Quote</a>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-12 bg-gradient-to-r from-purple-50 to-white">
+    <div class="container mx-auto px-6">
+      <a href="products.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-4">← Back to All Products</a>
+      <p class="text-purple-600 font-medium tracking-wide mb-2">PRODUCT CATEGORY</p>
+      <h1 class="text-4xl md:text-5xl font-light mb-4">Sliding Door Series</h1>
+      <p class="text-gray-600 text-lg max-w-2xl">
+        Complete sliding door hardware systems for frameless glass shower doors. 
+        Includes rollers, tracks, guides, and accessories for smooth and silent operation.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-center h-64 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200">
+        <div class="text-center">
+          <div class="text-5xl mb-4">🚪</div>
+          <h3 class="text-xl font-medium text-gray-600 mb-2">Sliding Door Products Coming Soon</h3>
+          <p class="text-gray-400">Roller systems, tracks, and accessories will be available here</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-100 py-6 text-center text-sm text-gray-500">
+    <div class="container mx-auto px-6"><p>© 2024 HKH Hardware Co., Ltd. All rights reserved.</p></div>
+  </footer>
+</body>
+</html>
