@@ -12,6 +12,9 @@
     .product-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02); }
     .btn-primary { background: #0f172a; transition: all 0.2s ease; }
     .btn-primary:hover { background: #1e3a8a; transform: translateY(-1px); }
+    .tab-btn.active { background: #1e40af; color: white; }
+    .product-section { display: none; }
+    .product-section.active { display: block; }
   </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -20,8 +23,10 @@
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#home" class="text-2xl font-light tracking-tight text-gray-900">HKH <span class="font-medium">Hardware</span></a>
       <div class="hidden md:flex items-center space-x-12 text-sm text-gray-600">
+        <a href="#home" class="hover:text-gray-900 transition-colors">Home</a>
         <a href="#products" class="hover:text-gray-900 transition-colors">Products</a>
-        <a href="#hot-products" class="hover:text-gray-900 transition-colors">Featured</a>
+        <a href="#hkh101" class="hover:text-gray-900 transition-colors">HKH-101</a>
+        <a href="#hkh102" class="hover:text-gray-900 transition-colors">HKH-102</a>
         <a href="#about" class="hover:text-gray-900 transition-colors">About</a>
         <a href="#contact" class="hover:text-gray-900 transition-colors">Contact</a>
       </div>
@@ -60,7 +65,7 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- HKH-101 -->
-        <a href="hkh101.html" class="product-card bg-white rounded-2xl border border-gray-100 overflow-hidden group">
+        <a href="#hkh101" class="product-card bg-white rounded-2xl border border-gray-100 overflow-hidden group">
           <div class="aspect-square bg-gray-50 p-8 flex items-center justify-center">
             <img src="images/hkh101-product.jpg" alt="HKH-101 Shower Door Hinge" class="max-w-full max-h-full object-contain" />
           </div>
@@ -73,7 +78,7 @@
         </a>
 
         <!-- HKH-102 -->
-        <a href="hkh102.html" class="product-card bg-white rounded-2xl border border-gray-100 overflow-hidden group">
+        <a href="#hkh102" class="product-card bg-white rounded-2xl border border-gray-100 overflow-hidden group">
           <div class="aspect-square bg-gray-50 p-8 flex items-center justify-center">
             <img src="images/hkh102-product.jpg" alt="HKH-102 Shower Door Hinge" class="max-w-full max-h-full object-contain" />
           </div>
@@ -97,6 +102,207 @@
             <p class="text-sm text-gray-400 font-medium mb-1">COMING SOON</p>
             <h3 class="text-xl font-semibold mb-2 text-gray-400">HKH-103</h3>
             <p class="text-gray-400 text-sm mb-4">Glass Clamp - Round</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HKH-101 Detail Section -->
+  <section id="hkh101" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+          <p class="text-blue-600 font-medium tracking-wide mb-2">HEAVY DUTY SERIES</p>
+          <h2 class="text-4xl font-light mb-2">HKH-101</h2>
+          <p class="text-gray-500">Shower Door Hinge - Glass to Wall</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          
+          <!-- Product Image -->
+          <div>
+            <div class="bg-white border border-gray-100 rounded-2xl p-8">
+              <img src="images/hkh101-product.jpg" alt="HKH-101 Shower Door Hinge" class="w-full" />
+            </div>
+          </div>
+
+          <!-- Product Description -->
+          <div class="pt-4">
+            <p class="text-gray-600 leading-relaxed mb-8">
+              Premium square profile shower door hinge with factory-bonded recessed gasket technology.
+              Self-centering mechanism ensures perfect door alignment. Ideal for residential bathrooms
+              and commercial hotel projects.
+            </p>
+
+            <!-- Specifications Table -->
+            <div class="overflow-hidden rounded-lg border border-blue-100 mb-8">
+              <table class="w-full text-sm">
+                <thead class="bg-blue-50">
+                  <tr>
+                    <th class="text-left px-4 py-3 font-semibold text-blue-800">Specification</th>
+                    <th class="text-left px-4 py-3 font-semibold text-blue-800">Value</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-blue-100">
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 text-blue-600">Glass Thickness</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">3/8" - 1/2" (10mm - 12mm)</td>
+                  </tr>
+                  <tr class="bg-blue-50/30">
+                    <td class="px-4 py-3 text-blue-600">Opening Angle</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">90° - 105°</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 text-blue-600">Door Weight - 2 Hinges</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">80 lbs (36 kg)</td>
+                  </tr>
+                  <tr class="bg-blue-50/30">
+                    <td class="px-4 py-3 text-blue-600">Door Weight - 3 Hinges</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">120 lbs (54 kg)</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 text-blue-600">Maximum Door Width</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">32" (813mm)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Key Features -->
+            <h3 class="text-lg font-semibold mb-4 text-blue-800">Features & Benefits</h3>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Factory-Bonded Recessed Gasket (Patent Pending)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Square Profile with Offset Back Plate</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Self-Centering within 15° of Closing Position</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Reversible 5° Pivot Pin for Positive Closing</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Solid Brass / Stainless Steel Construction</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Residential & Commercial Applications</span>
+              </li>
+            </ul>
+
+            <!-- Finishes -->
+            <h3 class="text-lg font-semibold mb-4 text-blue-800">Available Finishes</h3>
+            <p class="text-blue-700 mb-8">
+              Polished Chrome, Matte Black, Brushed Nickel, Gold, and custom PVD coatings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HKH-102 Detail Section -->
+  <section id="hkh102" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+          <p class="text-blue-600 font-medium tracking-wide mb-2">STANDARD SERIES</p>
+          <h2 class="text-4xl font-light mb-2">HKH-102</h2>
+          <p class="text-gray-500">Shower Door Hinge - Glass to Glass</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          
+          <!-- Product Image -->
+          <div>
+            <div class="bg-white border border-gray-100 rounded-2xl p-8">
+              <img src="images/hkh102-product.jpg" alt="HKH-102 Shower Door Hinge" class="w-full" />
+            </div>
+          </div>
+
+          <!-- Product Description -->
+          <div class="pt-4">
+            <p class="text-gray-600 leading-relaxed mb-8">
+              Standard series glass-to-glass shower door hinge with durable construction and smooth operation.
+              Perfect for frameless shower door enclosures in residential and light commercial applications.
+            </p>
+
+            <!-- Specifications Table -->
+            <div class="overflow-hidden rounded-lg border border-blue-100 mb-8">
+              <table class="w-full text-sm">
+                <thead class="bg-blue-50">
+                  <tr>
+                    <th class="text-left px-4 py-3 font-semibold text-blue-800">Specification</th>
+                    <th class="text-left px-4 py-3 font-semibold text-blue-800">Value</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-blue-100">
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 text-blue-600">Glass Thickness</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">3/8" - 1/2" (10mm - 12mm)</td>
+                  </tr>
+                  <tr class="bg-blue-50/30">
+                    <td class="px-4 py-3 text-blue-600">Opening Angle</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">90° - 120°</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 text-blue-600">Door Weight - 2 Hinges</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">60 lbs (27 kg)</td>
+                  </tr>
+                  <tr class="bg-blue-50/30">
+                    <td class="px-4 py-3 text-blue-600">Door Weight - 3 Hinges</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">90 lbs (41 kg)</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="px-4 py-3 text-blue-600">Maximum Door Width</td>
+                    <td class="px-4 py-3 font-medium text-blue-800">28" (711mm)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Key Features -->
+            <h3 class="text-lg font-semibold mb-4 text-blue-800">Features & Benefits</h3>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Heavy Duty Glass-to-Glass Connection</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Square Standard Profile Design</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Self-Closing Hinge Mechanism</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Precision Engineered Bearings</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Solid Brass Construction</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2 mt-0.5">•</span>
+                <span class="text-blue-700">Residential & Light Commercial Use</span>
+              </li>
+            </ul>
+
+            <!-- Finishes -->
+            <h3 class="text-lg font-semibold mb-4 text-blue-800">Available Finishes</h3>
+            <p class="text-blue-700 mb-8">
+              Polished Chrome, Matte Black, Brushed Nickel, Satin Brass.
+            </p>
           </div>
         </div>
       </div>
@@ -141,9 +347,7 @@
         </p>
         <div class="bg-blue-50 rounded-2xl p-8">
           <p class="text-sm text-blue-600 mb-2">Email Us</p>
-          <a href="mailto:sales@hkhhardware.com" class="text-2xl font-semibold text-blue-800 hover:text-blue-900 transition-colors">
-            sales@hkhhardware.com
-          </a>
+          <p class="text-2xl font-semibold text-blue-800">sales (at) hkhhardware.com</p>
         </div>
       </div>
     </div>
